@@ -547,6 +547,7 @@ spacy_exc_words = [
     "årh.",
 ]
 
+# From http://www.grafisk-litteratur.dk/?id=16
 additional_exc_words = [
     'a.m.b.a.',
     'adm.',
@@ -624,6 +625,7 @@ additional_exc_words = [
     'årl.',
 ]
 
+# Of my mind
 mail_exc_words = [
     'aftalenr.',
     'asap.',
