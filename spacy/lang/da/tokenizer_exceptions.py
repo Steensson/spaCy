@@ -625,8 +625,8 @@ additional_exc_words = [
     'årl.',
 ]
 
-# Of my mind
-mail_exc_words = [
+# From the pension sector
+pension_exc_words = [
     'aftalenr.',
     'asap.',
     'cpr-nr.',
@@ -639,10 +639,28 @@ mail_exc_words = [
     'mm.',
     'policenr.',
     'ps.',
-    'reg.nr.'
+    'reg.nr.',
+    'konto.',
+    'cpr.',
+    'CPRnr.',
+    'CPR-nr.',
+    'CVR-nr.',
+    'forsikringsnr.',
+    'opkrævningsnr.',
+    'firmanr.',
+    'h.h.v.',
+    'firmapensionsaftalenr.',
+    'telefonnr.',
+    'PS.',
+    'polnr.',
+    'tel.',
+    'fax.',
+    'forsikr.',
+    'FO-nr.',
+    'kd.nr.'
 ]
 
-for orth in spacy_exc_words + additional_exc_words + mail_exc_words:
+for orth in spacy_exc_words + additional_exc_words + pension_exc_words:
     _exc[orth] = [{ORTH: orth}]
     capitalized = orth.capitalize()
     _exc[capitalized] = [{ORTH: capitalized}]
